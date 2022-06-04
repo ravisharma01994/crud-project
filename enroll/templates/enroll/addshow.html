@@ -2,7 +2,7 @@
 {% block content %}
 <div class="row">
     <div class="col-sm-4">
-        <h4 class="text-center alert alert-info">Add Your Data</h4>
+        <h4 class="text-center alert alert-info">Add User Record</h4>
         <form action="" method="POST" >  
             {% csrf_token %}
             {{form.as_p}}
@@ -10,7 +10,7 @@
         </form>
     </div>
     <div class="col-sm-7 offset-1">
-        <h4 class="text-center alert alert-info">Your Data</h4>
+        <h4 class="text-center alert alert-info">User Record in DataBase</h4>
         {% if stu %}
         <table class="table table-hover">
             <thead>
@@ -42,7 +42,7 @@
           </table>
 
         {% else %}
-        <h4 class="text-center alert alert-warning">No Data</h4>
+        <h4 class="text-center alert alert-dark">No Record Found in DataBase</h4>
         {% endif %}
     </div>
 </div>
